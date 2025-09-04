@@ -1,14 +1,26 @@
 {
-    "posts":[
-        {
-            "title":"First post",
-            "content":"This is the first post",
-            "id":"1234"
-        },
-        {
-            "title":"Second post",
-            "content":"This is the second post",
-            "id":"5678"
-        }
-    ]
+  "posts": [
+    {
+      "title": "First post",
+      "content": "This is the first post",
+      "id": "1234"
+    },
+    {
+      "title": "Second post",
+      "content": "This is the second post",
+      "id": "5678"
+    },
+    {
+      "id": "4a25",
+      "title": "third post"
+    },
+    {
+      "id": "db24",
+      "title": ""
+    },
+    {
+      "id": "d820",
+      "title": "fourth post"
+    }
+  ]
 }

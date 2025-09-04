@@ -7,13 +7,14 @@ export default function MainPage() {
 
 const[title, setTitle] = useState('')
 const [content, setContent] = useState('')
-const router = useRouter();
+const router = useRouter
 
 
 
 const onhandleSubmit = async(e) =>{
     e.preventDefault()
     await axios.post("http://localhost:5000/posts",{title}, {content})
+
     router.push('/')
 }
 

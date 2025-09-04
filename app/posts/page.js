@@ -47,9 +47,9 @@ export default function Posts(){                    //server component
                                 <td className="px-6 py-3">{post.title}</td>
                                 <td className="px-6 py-3">{post.content}</td>
                                 <td className= "space-x-2">
-                                    <button className="bg-green-400 rounded-md px-4 py-1 font-semibold">Read</button>
-                                    <button className="bg-yellow-400 rounded-md px-4 py-1 font-semibold">Edit</button>
-                                    <button className="bg-red-500 rounded-md px-4 py-1 font-semibold">Delete</button>
+                                   <Link href={`/posts/${post.id} ? mode=read`}> <button className="bg-green-400 rounded-md px-4 py-1 font-semibold">Read</button></Link>
+                                   <Link href={`/posts/${post.id} ? mode=edit`}>  <button className="bg-yellow-400 rounded-md px-4 py-1 font-semibold">Edit</button></Link>
+                                    <button className= " bg-red-500 rounded-md px-4 py-1 font-semibold" onClick={ () =>handleDelete(post.id)}>Delete</button>
                                 </td>
                             </tr>
                            
